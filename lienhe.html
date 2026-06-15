@@ -1,0 +1,159 @@
+```html
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Liên hệ - Hưng's Phone</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#e1d43e;
+}
+
+header{
+    background:#007bff;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+.container{
+    width:90%;
+    max-width:1000px;
+    margin:30px auto;
+}
+
+.contact-box{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom:20px;
+}
+
+.contact-box h2{
+    color:#007bff;
+    margin-bottom:15px;
+}
+
+.contact-box p{
+    margin:10px 0;
+}
+
+form{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+input,
+textarea{
+    width:100%;
+    padding:12px;
+    margin-top:5px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    background:#007bff;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#0056b3;
+}
+
+footer{
+    margin-top:40px;
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>THÔNG TIN LIÊN HỆ</h1>
+    <p>Hưng's Phone - Chuyên điện thoại chính hãng</p>
+</header>
+
+<div class="container">
+
+    <div class="contact-box">
+        <h2>Thông tin cửa hàng</h2>
+
+        <p><strong>🏪 Tên cửa hàng:</strong> Hưng's Phone</p>
+
+        <p><strong>📍 Địa chỉ:</strong> 123 Đường ABC, Quận XYZ, Hà Nội</p>
+
+        <p><strong>📞 Hotline:</strong> 1900 1234</p>
+
+        <p><strong>📧 Email:</strong> support@hungsphone.vn</p>
+
+        <p><strong>🕒 Giờ mở cửa:</strong> 08:00 - 22:00 tất cả các ngày</p>
+
+        <p><strong>🌐 Website:</strong> www.hungsphone.vn</p>
+    </div>
+
+    <form onsubmit="sendMessage(event)">
+
+        <h2>Gửi tin nhắn cho chúng tôi</h2>
+
+        <label>Họ và tên</label>
+        <input type="text" id="name" required>
+
+        <label>Email</label>
+        <input type="email" id="email" required>
+
+        <label>Nội dung</label>
+        <textarea id="message" rows="5" required></textarea>
+
+        <button type="submit">
+            Gửi liên hệ
+        </button>
+
+    </form>
+
+</div>
+
+<footer>
+    © 2026 Hưng's Phone - Mọi quyền được bảo lưu
+</footer>
+
+<script>
+
+function sendMessage(event){
+
+    event.preventDefault();
+
+    let name = document.getElementById("name").value;
+
+    alert(
+        "Cảm ơn " + name +
+        " đã liên hệ với Hưng's Phone. Chúng tôi sẽ phản hồi sớm nhất!"
+    );
+
+}
+
+</script>
+
+</body>
+</html>
+```

@@ -1,0 +1,172 @@
+```html
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chính sách giao hàng - Hưng's Phone</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#cdc418;
+}
+
+header{
+    background:#ff6600;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+.container{
+    width:90%;
+    max-width:1000px;
+    margin:30px auto;
+}
+
+.box{
+    background:white;
+    padding:25px;
+    margin-bottom:20px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.box h2{
+    color:#ff6600;
+    margin-bottom:15px;
+}
+
+.box ul{
+    margin-left:20px;
+}
+
+.box li{
+    line-height:1.8;
+}
+
+form{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+input,
+textarea{
+    width:100%;
+    padding:12px;
+    margin-top:5px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    background:#ff6600;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#e65c00;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:30px;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>CHÍNH SÁCH GIAO HÀNG</h1>
+    <p>Hưng's Phone - Giao hàng nhanh toàn quốc</p>
+</header>
+
+<div class="container">
+
+    <div class="box">
+        <h2>Phạm vi giao hàng</h2>
+        <ul>
+            <li>Giao hàng trên toàn quốc.</li>
+            <li>Hỗ trợ giao nhanh nội thành Hà Nội và TP.HCM.</li>
+            <li>Giao tận nơi đến địa chỉ khách hàng yêu cầu.</li>
+        </ul>
+    </div>
+
+    <div class="box">
+        <h2>Thời gian giao hàng</h2>
+        <ul>
+            <li>Nội thành: 1 - 2 ngày làm việc.</li>
+            <li>Ngoại thành: 2 - 4 ngày làm việc.</li>
+            <li>Tỉnh thành khác: 3 - 7 ngày làm việc.</li>
+        </ul>
+    </div>
+
+    <div class="box">
+        <h2>Phí giao hàng</h2>
+        <ul>
+            <li>Miễn phí với đơn hàng từ 5.000.000 VNĐ.</li>
+            <li>Đơn hàng dưới 5.000.000 VNĐ: phí từ 20.000 - 50.000 VNĐ.</li>
+            <li>Phí cụ thể sẽ được thông báo khi xác nhận đơn hàng.</li>
+        </ul>
+    </div>
+
+    <form onsubmit="trackOrder(event)">
+
+        <h2>Tra cứu đơn hàng</h2>
+
+        <label>Mã đơn hàng</label>
+        <input type="text" id="orderCode" required>
+
+        <label>Số điện thoại đặt hàng</label>
+        <input type="tel" required>
+
+        <button type="submit">
+            Tra cứu
+        </button>
+
+    </form>
+
+</div>
+
+<footer>
+    © 2026 Hưng's Phone - Chính sách giao hàng
+</footer>
+
+<script>
+
+function trackOrder(event){
+
+    event.preventDefault();
+
+    let code =
+    document.getElementById("orderCode").value;
+
+    alert(
+        "Mã đơn hàng: " + code +
+        "\n\nĐơn hàng đang được vận chuyển."
+    );
+
+}
+
+</script>
+
+</body>
+</html>
+```

@@ -1,0 +1,186 @@
+```html
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chính sách đổi trả - Hưng's Phone</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#e8e52c;
+}
+
+header{
+    background:#28a745;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+.container{
+    width:90%;
+    max-width:1000px;
+    margin:30px auto;
+}
+
+.box{
+    background:white;
+    padding:25px;
+    margin-bottom:20px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.box h2{
+    color:#28a745;
+    margin-bottom:15px;
+}
+
+.box li{
+    line-height:1.8;
+}
+
+form{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:12px;
+    margin-top:5px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    background:#28a745;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#1e7e34;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:30px;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>CHÍNH SÁCH ĐỔI TRẢ</h1>
+    <p>Hưng's Phone - Cam kết quyền lợi khách hàng</p>
+</header>
+
+<div class="container">
+
+    <div class="box">
+        <h2>Thời gian đổi trả</h2>
+        <ul>
+            <li>Đổi mới trong vòng 7 ngày nếu lỗi từ nhà sản xuất.</li>
+            <li>Hỗ trợ đổi sản phẩm khác trong vòng 30 ngày.</li>
+            <li>Phụ kiện được đổi trong vòng 7 ngày.</li>
+        </ul>
+    </div>
+
+    <div class="box">
+        <h2>Điều kiện đổi trả</h2>
+        <ul>
+            <li>Sản phẩm còn nguyên hộp, phụ kiện đầy đủ.</li>
+            <li>Không bị rơi vỡ hoặc vào nước.</li>
+            <li>Có hóa đơn mua hàng.</li>
+            <li>Sản phẩm phát sinh lỗi kỹ thuật từ nhà sản xuất.</li>
+        </ul>
+    </div>
+
+    <div class="box">
+        <h2>Quy trình đổi trả</h2>
+        <ul>
+            <li>Bước 1: Điền thông tin yêu cầu đổi trả.</li>
+            <li>Bước 2: Nhân viên xác nhận thông tin.</li>
+            <li>Bước 3: Mang sản phẩm đến cửa hàng hoặc gửi chuyển phát.</li>
+            <li>Bước 4: Nhận sản phẩm mới hoặc hoàn tiền theo chính sách.</li>
+        </ul>
+    </div>
+
+    <form onsubmit="requestReturn(event)">
+
+        <h2>Yêu cầu đổi trả sản phẩm</h2>
+
+        <label>Họ và tên</label>
+        <input type="text" id="name" required>
+
+        <label>Số điện thoại</label>
+        <input type="tel" id="phone" required>
+
+        <label>Sản phẩm cần đổi trả</label>
+        <input type="text" id="product" required>
+
+        <label>Lý do đổi trả</label>
+        <select id="reason">
+            <option>Lỗi nhà sản xuất</option>
+            <option>Giao sai sản phẩm</option>
+            <option>Sản phẩm bị hư hỏng</option>
+            <option>Lý do khác</option>
+        </select>
+
+        <label>Mô tả chi tiết</label>
+        <textarea rows="5"></textarea>
+
+        <button type="submit">
+            Gửi yêu cầu
+        </button>
+
+    </form>
+
+</div>
+
+<footer>
+    © 2026 Hưng's Phone - Chính sách đổi trả
+</footer>
+
+<script>
+
+function requestReturn(event){
+
+    event.preventDefault();
+
+    let name = document.getElementById("name").value;
+    let product = document.getElementById("product").value;
+
+    alert(
+        "Yêu cầu đổi trả của " + name +
+        "\nSản phẩm: " + product +
+        "\nĐã được gửi thành công!"
+    );
+
+}
+
+</script>
+
+</body>
+</html>
+```

@@ -1,0 +1,166 @@
+```html
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chính sách bảo hành - Hưng's Phone</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#c9c553;
+}
+
+header{
+    background:#007bff;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+.container{
+    width:90%;
+    max-width:1000px;
+    margin:30px auto;
+}
+
+.box{
+    background:white;
+    padding:25px;
+    margin-bottom:20px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.box h2{
+    color:#007bff;
+    margin-bottom:15px;
+}
+
+.box p,
+.box li{
+    line-height:1.8;
+}
+
+form{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin-top:5px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    background:#007bff;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#0056b3;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:30px;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>CHÍNH SÁCH BẢO HÀNH</h1>
+    <p>Hưng's Phone - Điện thoại chính hãng</p>
+</header>
+
+<div class="container">
+
+    <div class="box">
+        <h2>Thời gian bảo hành</h2>
+        <ul>
+            <li>Điện thoại mới: Bảo hành 12 tháng.</li>
+            <li>Điện thoại cao cấp: Bảo hành 24 tháng.</li>
+            <li>Phụ kiện chính hãng: Bảo hành 6 tháng.</li>
+        </ul>
+    </div>
+
+    <div class="box">
+        <h2>Điều kiện bảo hành</h2>
+        <ul>
+            <li>Sản phẩm còn trong thời hạn bảo hành.</li>
+            <li>Có hóa đơn mua hàng hoặc phiếu bảo hành.</li>
+            <li>Tem bảo hành còn nguyên vẹn.</li>
+            <li>Lỗi phát sinh từ nhà sản xuất.</li>
+        </ul>
+    </div>
+
+    <div class="box">
+        <h2>Trường hợp không được bảo hành</h2>
+        <ul>
+            <li>Rơi vỡ, va đập mạnh.</li>
+            <li>Vào nước hoặc ẩm mốc.</li>
+            <li>Tự ý tháo lắp, sửa chữa.</li>
+            <li>Tem bảo hành bị rách hoặc mất.</li>
+        </ul>
+    </div>
+
+    <form onsubmit="checkWarranty(event)">
+
+        <h2>Tra cứu bảo hành</h2>
+
+        <label>Mã sản phẩm / IMEI</label>
+        <input type="text" id="imei" required>
+
+        <button type="submit">
+            Kiểm tra bảo hành
+        </button>
+
+    </form>
+
+</div>
+
+<footer>
+    © 2026 Hưng's Phone - Chính sách bảo hành
+</footer>
+
+<script>
+
+function checkWarranty(event){
+
+    event.preventDefault();
+
+    let imei = document.getElementById("imei").value;
+
+    alert(
+        "Mã sản phẩm: " + imei +
+        "\n\nSản phẩm đang còn thời hạn bảo hành."
+    );
+
+}
+
+</script>
+
+</body>
+</html>
+```
